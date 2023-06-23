@@ -37,6 +37,7 @@ class DealListBloc extends Bloc<DealListEvent, DealListState> {
       final list = await _repository.getDealList();
       emitter(DealListState.loaded(listData: list));
     } catch (e) {
+
       emitter(DealListState.error(message: e.toString()));
     }
   }
