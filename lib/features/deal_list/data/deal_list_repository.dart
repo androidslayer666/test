@@ -10,7 +10,7 @@ class DealListRepository {
     final data = {
       "SID": "10813_0c0a9a2f86eab09196705a274378b64a",
       "PAGE": 1,
-      "FILTER": {},
+      "FILTER": {'BOARD_ID': 1843},
       "LIMIT": 12,
       "REQUIRED_FIELDS": ["OFFERS_TYPE_NAME"],
     };
