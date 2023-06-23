@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:socket_test/features/deal_list/data/deal_lst_repository.dart';
+import 'package:socket_test/features/deal_list/data/deal_list_repository.dart';
 import 'package:socket_test/features/deal_list/presentation/bloc/deal_list_bloc.dart';
 import 'package:socket_test/features/deal_list/presentation/widgets/deal_list_item.dart';
 import 'package:socket_test/main.dart';

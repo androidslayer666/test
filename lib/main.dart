@@ -2,7 +2,7 @@ import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
 import 'package:socket_test/app/app.dart';
-import 'package:socket_test/features/deal_list/data/deal_lst_repository.dart';
+import 'package:socket_test/features/deal_list/data/deal_list_repository.dart';
 
 final getIt = GetIt.instance;
 

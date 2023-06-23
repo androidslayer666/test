@@ -1,6 +1,6 @@
 import 'package:bloc/bloc.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:socket_test/features/deal_list/data/deal_lst_repository.dart';
+import 'package:socket_test/features/deal_list/data/deal_list_repository.dart';
 import 'package:socket_test/features/deal_list/data/models/deal.dart';
 
 part 'deal_list_bloc.freezed.dart';

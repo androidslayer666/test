@@ -14,10 +14,13 @@ class DealListRepository {
       "LIMIT": 12,
       "REQUIRED_FIELDS": ["OFFERS_TYPE_NAME"],
     };
+
+    // Somehow when I delete the "SID" parameter from query ad only left it in data,
+    // the response is "IS_AUTHORIZE":false. So SID has to be there too
     final response = await _dio.post(
-        'https://nastintesthodl.stocrm.ru/api/external/v1/offers/get_from_filter',
+        'https://nastintesthodl.stocrm.ru/api/external/v1/offers/'
+            'get_from_filter?SID=10813_0c0a9a2f86eab09196705a274378b64a',
         data: data);
-    print(response);
 
     if (response.data['RESPONSE']?['DATA'] == null) throw Exception('No data');
     if (response.data['RESPONSE']?['DATA'] is! List<dynamic>) {
